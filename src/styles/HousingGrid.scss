@@ -1,0 +1,26 @@
+.housing-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 0 auto;
+  padding: 50px 55px;
+  justify-items: center;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}
+
+@media (max-width: 1100px) {
+  .housing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .housing-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px 0 24px 0;
+  }
+}
