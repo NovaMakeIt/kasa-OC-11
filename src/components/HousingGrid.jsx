@@ -6,7 +6,7 @@ function HousingGrid() {
   return (
     <div className="housing-grid">
       {logements.map(({ id, title, cover }) => (
-        <HousingCard key={id} title={title} cover={cover} />
+        <HousingCard key={id} id={id} title={title} cover={cover} />
       ))}
     </div>
   );

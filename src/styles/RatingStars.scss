@@ -1,0 +1,12 @@
+.rating-stars {
+  display: flex;
+  gap: 12px;
+}
+.star {
+  color: #e3e3e3;
+  font-size: 1.6rem;
+  transition: color 0.2s;
+}
+.star.filled {
+  color: #ff6060;
+}

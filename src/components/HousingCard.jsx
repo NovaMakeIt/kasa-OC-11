@@ -1,11 +1,13 @@
 import '../styles/HousingCard.scss';
 
-function HousingCard({ title, cover }) {
+import { Link } from 'react-router-dom';
+
+function HousingCard({ id, title, cover }) {
   return (
-    <div className="housing-card" style={{ backgroundImage: `url(${cover})` }}>
+    <Link to={`/logement/${id}`} className="housing-card" style={{ backgroundImage: `url(${cover})` }}>
       <div className="housing-card__gradient" />
       <div className="housing-card__title">{title}</div>
-    </div>
+    </Link>
   );
 }
 
