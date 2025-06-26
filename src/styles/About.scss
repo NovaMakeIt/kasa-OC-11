@@ -1,0 +1,69 @@
+.about-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.about-banner-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  height: 223px;
+  margin: 32px auto 40px auto;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  border-radius: 25px;
+  mix-blend-mode: darken;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  filter: brightness(0.5);
+}
+
+.about-banner-overlay {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  border-radius: 25px;
+  background: black;
+  opacity: 0.9;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.about-dropdowns {
+  width: 100%;
+  max-width: 1023px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 1100px) {
+  .about-banner-wrapper {
+    max-width: 98vw;
+    height: 160px;
+    border-radius: 14px;
+  }
+  .about-banner-img, .about-banner-overlay {
+    border-radius: 14px;
+  }
+  .about-dropdowns {
+    max-width: 98vw;
+    gap: 18px;
+  }
+}
