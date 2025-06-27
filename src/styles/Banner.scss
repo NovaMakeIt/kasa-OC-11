@@ -16,15 +16,17 @@
     inset: 0;
     background: black;
     opacity: 0.6;
-    border-radius: 25px;
+    border-radius: inherit;
     mix-blend-mode: darken;
     z-index: 1;
   }
   .kasa-banner__text {
     color: #fff;
-    font-size: 2.2rem;
+    font-size: 48px;
     font-weight: 700;
     text-align: center;
+    line-height: 143%;
+    letter-spacing: 0%;
     z-index: 2;
     width: 100%;
     margin: 0;
@@ -36,6 +38,17 @@
   .kasa-banner {
     height: 120px;
     border-radius: 12px;
+    .kasa-banner__text {
+      font-size: 1.5rem;
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .kasa-banner {
+    height: 100px;
+    border-radius: 10px;
     .kasa-banner__text {
       font-size: 1.2rem;
     }

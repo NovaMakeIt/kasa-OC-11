@@ -6,8 +6,8 @@ function RatingStars({ rating }) {
   const stars = [];
   for (let i = 1; i <= 5; i++) {
     stars.push(
-      <span>
-        <img src={i <= rating ? starsFill : starsNormal} alt="star" />
+      <span key={i}>
+        <img className="star" src={i <= rating ? starsFill : starsNormal} alt="star" />
       </span>
     );
   }

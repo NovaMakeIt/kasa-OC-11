@@ -16,10 +16,10 @@ function Carousel({ pictures, title }) {
       {pictures.length > 1 && (
         <>
           <button className="carousel-arrow left" onClick={prev}>
-            <img src={leftArrow} alt="left arrow" />
+            <img className="carousel-arrow-img" src={leftArrow} alt="left arrow" />
           </button>
           <button className="carousel-arrow right" onClick={next}>
-            <img src={rightArrow} alt="right arrow" />
+            <img className="carousel-arrow-img" src={rightArrow} alt="right arrow" />
           </button>
           <span className="carousel-count">{index + 1}/{pictures.length}</span>
         </>

@@ -35,3 +35,25 @@
         color: #000;
     }
 }
+
+@media (max-width: 400px) {
+    .not-found {
+      min-height: 65vh;
+      padding: 0 8px;
+      gap: 50px;
+      &__title {
+        font-size: 96px;
+        margin-bottom: 0.2em;
+      }
+      &__text {
+        font-size: 18px;
+        margin-bottom: 2em;
+      }
+      &__link {
+        font-size: 14px;
+        padding: 10px 18px;
+        border-radius: 16px;
+        margin-top: 1em;
+      }
+    }
+  }

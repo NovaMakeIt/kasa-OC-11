@@ -2,7 +2,7 @@
   width: 100%;
   background: white;
   .header-content {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 24px 16px 16px 16px;
     display: flex;
@@ -27,6 +27,24 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .kasa-header {
+    .header-content {
+      max-width: 98vw;
+      padding: 24px 16px 16px 16px;
+    }
+    .header-logo {
+      height: 42px;
+    }
+    .header-nav {
+      gap: 28px;
+      a {
+        font-size: 12px;
+      }      
     }
   }
 }

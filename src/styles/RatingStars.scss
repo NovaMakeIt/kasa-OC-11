@@ -10,3 +10,13 @@
 .star.filled {
   color: #ff6060;
 }
+
+@media (max-width: 600px) {
+  .rating-stars {
+    gap: 8px;
+  }
+  .star {
+    width: 16px;
+    height: 16px;
+  }
+}

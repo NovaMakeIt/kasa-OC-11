@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import '../styles/Dropdown.scss';
-import arrowDown from '../assets/icon/arrow-down.svg';
 import arrowUp from '../assets/icon/arrow-up.svg';
 
 function Dropdown({ title, children }) {
@@ -9,7 +8,9 @@ function Dropdown({ title, children }) {
     <div className={`dropdown${open ? ' open' : ''}`}>
       <div className="dropdown-header" onClick={() => setOpen((o) => !o)}>
         <span>{title}</span>
-        <span className="dropdown-arrow">{open ? <img src={arrowDown} alt="arrow-down" /> : <img src={arrowUp} alt="arrow-up" />}</span>
+        <span className={`dropdown-arrow${open ? ' open' : ''}`}>
+          <img src={arrowUp} alt="arrow" />
+        </span>
       </div>
       {open && <div className="dropdown-content">{children}</div>}
     </div>
